@@ -3,11 +3,11 @@ const mysql = require('mysql2/promise');
 
 // Conexión con la BD
 const pool = mysql.createPool({
-    host: 'database-2.c500mygg6ofc.us-east-2.rds.amazonaws.com',
-    user: 'adminmexp',//usuario
-    password: 'A3xBuxsK',//contraseña
-    port:   3306,//puerto
-    database: 'mexp',//db
+    host: process.env.DBHOST,
+    user: process.env.DBUSER,
+    password: process.env.DBPASSW,
+    port:   3306,
+    database: process.env.DBNAME
 });
 
 
