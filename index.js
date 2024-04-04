@@ -73,7 +73,7 @@ app.use('/admin/viaje-tour', viajeTourRoutes)
 app.use('/cliente/comentario', comentarioRoutes)
 app.use('/venta', ventaRoutes)
 
-app.get('/', (req, res) => res.send('INSITU TOURS API'))
+app.get('/', (req, res) => res.send('MEZCANAUTIC TOURS API'))
 
 // 4. SERVIDOR
 //app.listen(process.env.PORT, () => {
